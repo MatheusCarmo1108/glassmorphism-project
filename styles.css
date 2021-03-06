@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@100&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right,#191970,#A020F0) ;
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img/planets-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info{
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+.info__title {
+    width: 480px;
+}
+.info__title h1{
+    font-family: Playfair Display, sans-serif;
+    width: 400px;
+    font-style: normal;
+    font-weight: bold;
+    font-style: 48px;
+    line-height: 60px;
+    text-transform:capitalize;
+    color: 	#FFF0F5;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.info__title p{
+    font-family: Roboto, sans-serif;
+    width: 320px;
+    color: #E6E6FA;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+}
+
+.info__subtitle {
+    width: 250px;
+    position: relative;
+    height: 235px;
+    border-radius: 10px;
+    outline: none;
+    border:1px solid #D8BFD8;
+    background: rgba(255, 255, 255,.15);
+    backdrop-filter: blur(10px);    
+}
+.info__subtitle h2{
+    margin-top: 20px;
+    font-family: Playfair Display, sans-serif;
+    font-size: 20px;
+    color:	#180125;
+    font-weight: bold;
+    text-align:center;
+}
+
+.info__subtitle img{
+    margin-top: 15%;
+    width: 100px;
+    height: auto;
+    border: 1px solid #4B0082;
+    display: block; margin-left: auto; margin-right: auto;
+    border-radius: 30%;
+}
+
+.info__card{
+    width: 700px;
+    height: 500px;
+    max-height: auto ;
+    border-radius: 100px;
+    border:1px solid #D8BFD8;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    outline: none;
+    align-content: center;
+    
+}
+
+.info__card h1{
+    text-align: center;
+}
+.info__card h2{
+    text-align: center;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.info__card img{
+
+    width: 300px;
+    height:300p;
+    border-radius: -10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+@media screen and (max-width: 980px){
+    .info__card{
+        height: 600px;    
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
